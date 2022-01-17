@@ -14,4 +14,18 @@ const buttonGen = document.getElementById('buttonGen');
 buttonGen.addEventListener('click', function () {
     const userChoiceValue = userChoice.value;
     console.log(userChoiceValue);
+    switch (userChoiceValue) {
+        case 'diff1':
+            console.log('1-100');
+            break;
+        case 'diff2':
+            console.log('1-81');
+            break;
+        case 'diff3':
+            console.log('1-49');
+            break;
+        default:
+            console.log(`Sorry, we are out of `);
+    }
+
 })
