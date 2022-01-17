@@ -6,6 +6,15 @@ con difficoltà 2 => tra 1 e 81
 con difficoltà 3 => tra 1 e 49
 */
 
+
+
+
+const getRandomNumer = (number) => {
+    const numRandom = Math.floor(Math.random() * number) + 1;
+
+    return numRandom
+}
+
 // PRENDO LA SCELTA DELL UTENTE
 const userChoice = document.getElementById('choice');
 const buttonGen = document.getElementById('buttonGen');
@@ -25,6 +34,10 @@ buttonGen.addEventListener('click', function () {
                 cella.classList.add('diff1');
                 grid.appendChild(cella);
                 console.log('1-100');
+
+
+                const n = getRandomNumer(dimensions[0]);
+                cella.innerText = n;
             };
             break;
         case 'diff2':
@@ -34,6 +47,9 @@ buttonGen.addEventListener('click', function () {
                 cella.classList.add('diff2');
                 grid.appendChild(cella);
                 console.log('1-81');
+
+                const n = getRandomNumer(dimensions[1]);
+                cella.innerText = n;
             };
             break;
         case 'diff3':
@@ -42,9 +58,11 @@ buttonGen.addEventListener('click', function () {
                 cella.className = 'cell';
                 cella.classList.add('diff3');
                 grid.appendChild(cella);
-                console.log('1-81');
+                console.log('1-49');
+
+                const n = getRandomNumer(dimensions[2]);
+                cella.innerText = n;
             };
-            console.log('1-49');
             break;
         default:
             console.log(`Sorry, we are out of `);
