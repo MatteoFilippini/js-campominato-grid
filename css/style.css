@@ -19,18 +19,35 @@ header{
     max-width: 100%;
     margin: 0 auto;
     
+    
     border: 1px dashed blue;
 }
 
 .grid{
     height: 300px;
     width: 300px;
-    display: flex;
+    display: flex; 
     flex-wrap: wrap;
-    
+
     border: 1px solid black;
 }
 
-.grid #cell{
 
+.cell{
+    border: 1px solid red;
+}
+
+.diff1{
+    height: calc(100%/10);
+    width: calc(100%/10);
+}
+
+.diff2{
+    height: calc(100%/9);
+    width: calc(100%/9);
+}
+
+.diff3{
+    height: calc(100%/7);
+    width: calc(100%/7);
 }
