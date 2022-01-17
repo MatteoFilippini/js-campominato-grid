@@ -4,11 +4,33 @@
     box-sizing: border-box;
 }
 
-main{
+body{
     background-color: lightgreen;
 }
 
 header{
     display: flex;
     justify-content: space-around;
+    background-color: white;
+}
+
+.container{
+    width: 1080px;
+    max-width: 100%;
+    margin: 0 auto;
+    
+    border: 1px dashed blue;
+}
+
+.grid{
+    height: 300px;
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    
+    border: 1px solid black;
+}
+
+.grid #cell{
+
 }

@@ -7,7 +7,6 @@ con difficoltà 3 => tra 1 e 49
 */
 
 // PRENDO LA SCELTA DELL UTENTE
-
 const userChoice = document.getElementById('choice');
 const buttonGen = document.getElementById('buttonGen');
 
